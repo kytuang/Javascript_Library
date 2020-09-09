@@ -39,5 +39,4 @@ function setup() {
     triangle(420, 375, 485, 375, 450, 325)
 
 
-
 }
