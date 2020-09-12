@@ -1,7 +1,8 @@
 
+//define i = 0
+var o=0;
 
-var i=1;
-
+//output +1 number every draw starting 0
 function draw() {
-    console.log(i++);
+    console.log(o = o + 1);
 }
