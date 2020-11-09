@@ -2,23 +2,27 @@ let dvBox= document.getElementById("pixels");
 
 dvBox.style.backgroundColor = "#038227";
 
+varName = 100 + "px";
 
+dvBox.style.width = varName;
+dvBox.style.height = varName;
 
-dvBox.style.width = "100px" ;
-dvBox.style.height = "100px" ;
-  
-var boxSize = dvBox.style.width * 1.1;
-var boxSize = dvBox.style.height * 1.1;
 
 function zoom() {
 
-for (let x = 0; x >= 5; x++){
-    
-    dvBox.style.backgroundColor = "#820310";
+    var dvBox = document.getElementById("pixels");
+    var Box = dvBox.getBoundingClientRect();
 
-    dvBox.style.width =  (boxSize + "px");
-    dvBox.style.height = boxSize + "px";
-    }
+    var varName = Box.height;
+    var varName = Box.width;
+
+    var newHeight = varName *1.1;
+    var newWidth = varName * 1.1;
+
+
+    
+    document.getElementById("pixels").style.height = newHeight+"px";
+    document.getElementById("pixels").style.width = newWidth+"px";
 
 
 }
