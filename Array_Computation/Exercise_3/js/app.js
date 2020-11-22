@@ -12,13 +12,13 @@ let objects = [
    ];
 
 
-for (var i=0; i < objects.value; i++) {
+objects.forEach((div2) => {
 
     let div1 = document.createElement("div1");
-    div1.setAttribute('color', objects.color);
-    div1.setAttribute('height',  objects.height);
-    div1.setAttribute('width', objects.width);
+    div1.setAttribute('color', div2.color);
+    div1.setAttribute('height',  div2.height);
+    div1.setAttribute('width', div2.width);
 
     document.body.appendChild(div1);
-}
 
+});
