@@ -1,6 +1,4 @@
 
-
-
 function Calculate() {
 
     var inputID = Number(document.getElementById("inputID").value);
