@@ -5,15 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Mixer</title>
 </head>
-<body>
-
-
-    <div id= "div2" onmouseover="mouseOver()" onmouseout="mouseOut()"></div>
-
-
+<style>
+    #mainDiv {
+      width: 700px;
+      height: 160px;
+            margin: auto;
+            background-color: black;
+    }
+             
+    #changeDiv {
+      width: 695px;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      margin: auto;
+      margin-top: 20px;
+      border: 3px solid grey;
+      text-align: center;
+      color: grey;
+      font-size: 20px;
+      font-weight: bold;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    #red1, 
+    #red5, 
+    #red10  {
+        background-color: red;
+        margin: auto;
+       
+        
+    }
+   #green1, 
+   #green5, 
+   #green10  {
+        background-color: green;
+        margin: auto;
+        
+    }
+    #blue1, 
+    #blue5, 
+    #blue10  {
+        background-color: blue;
+        margin: auto;
+        
+    }
+    #newButtons {width: 110px;
+        margin: auto;
+    }
+  </style>
+  <body>
+    <div id="mainDiv"></div>
+    <div id="changeDiv"></div>
+    
+  </br>
+  <div id="newButtons">
+  <button id="red1">+1</button>
+  <button id="red5">+5</button>
+  <button id="red10">+10</button>
+</br>
+  <button id="green1">+1</button>
+  <button id="green5">+5</button>
+  <button id="green10">+10</button>
+</br>
+  <button id="blue1">+1</button>
+  <button id="blue5">+5</button>
+  <button id="blue10">+10</button>
+</div>
 
     <script src="js/app.js"></script>
-
-</body>
-
+  </body>
 </html>
