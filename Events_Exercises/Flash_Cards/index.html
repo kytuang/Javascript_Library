@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Cards</title>
 </head>
+<style>
+    #mainDiv {
+      background-color:lightgreen;
+      width: 500px;
+    }
+  </style>
+
 <body>
-
-
-    <div id= "div2" onmouseover="mouseOver()" onmouseout="mouseOut()"></div>
-
-
+    <div id="mainDiv"></div>
+    <div id="cards">
+      <button id="Q1" data-question="Tallahassee">
+        What is the capital of Florida?
+      </button>
+      <button id="Q2" data-question="Sacramento">
+        What is the capital of California?
+      </button>
+      <button id="Q3" data-question="50 states.">
+        How many states are in the United States?
+      </button>
+    </div>
 
     <script src="js/app.js"></script>
-
 </body>
 
 </html>
