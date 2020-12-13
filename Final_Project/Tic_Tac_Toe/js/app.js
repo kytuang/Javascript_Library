@@ -86,7 +86,7 @@ function result() {
 if (this.innerHTML !== blank) {
     return;
 }
-this.innerHTML = winner; //display the results
+this.innerHTML = winner; //display the marks
 mark += 1;
 score[winner] += this.checker; //display the winner
 if (win(this)) { //if winner
@@ -117,7 +117,7 @@ if (win(this)) { //if winner
     //whose turns
     winner = winner === "X" ? "O" : "X";
     //this players turn
-    document.getElementById('winner').textContent = 'Player ' + winner + ' turns';
+   document.getElementById('winner').textContent = 'Player ' + winner + ' turns';
     }
 }
 //go 
