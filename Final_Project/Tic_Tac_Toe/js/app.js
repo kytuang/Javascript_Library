@@ -90,7 +90,7 @@ this.innerHTML = winner; //display the marks
 mark += 1;
 score[winner] += this.checker; //display the winner
 if (win(this)) { //if winner
-    showResult.innerHTML = ('winner: Player ' + winner);
+    showResult.innerHTML = ('Last game winner: Player ' + winner);
     score = {
         "X": 0,
         "O": 0
@@ -102,7 +102,7 @@ if (win(this)) { //if winner
        square.innerHTML = blank; 
        });
 } else if (mark === sizeX * sizeX) {
-    showResult.innerHTML= ("The game is Draw");
+    showResult.innerHTML= ("Last game is a Draw");
     score = {
         "X": 0,
         "O": 0
